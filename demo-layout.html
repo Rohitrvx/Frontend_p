@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Layout</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100vh;
+        /* background-color: black; */
+      }
+      #box1 {
+        display: flex;
+        height: 50px;
+        background-color: white;
+        align-items: end;
+      }
+       #box2 {
+        /* height: 80%; */
+      } 
+      #box3 {
+        height: 70px;
+        background-color: black;
+        color: white;
+        font-size: large;
+        align-content: center; 
+      }
+      #box3 p{
+        display: flex;
+        justify-content: center;
+      }
+
+      .name {
+        margin: 0px 1000px 5px 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+      }
+      .items {
+        align-content: center;
+        width: 40%;
+        height: 70%;
+        /* background-color: gray; */
+      }
+      .items ul {
+        display: flex;
+        list-style: none;
+        margin: 20px;
+        font-size: 20px;
+      }
+      .items ul li {
+        margin: 50px;
+        margin-left: 0px;
+      }
+
+      img {
+        margin-bottom: 50px;
+      }
+
+      .project {
+        margin-left: 20px;
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+      hr{
+        margin-bottom: 30px;
+      }
+
+      .card1 {
+        height: 234px;
+        width: 350px;
+        border: 2px ridge black;
+        margin: 10px;
+      }
+      #pics{
+        width: 280px;
+        width: 347px;
+      }
+      .row1{
+        display: flex;
+      }
+      .row2{
+        display: flex;
+        margin-bottom: 80px;
+      }
+      .about{
+        margin: 20px;
+      }
+
+      .about p{
+        font-size: 27px;
+        margin: 10px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+      }
+      .des{
+        display: flex;
+      }
+
+      .des1{
+        border: 2px solid black;
+        width: 355px;
+        height: 406px;
+        margin: 10px;
+        font-size: 18px;
+      }
+      .des1 h2{
+        margin: 10px;
+      }
+      .des1 p{
+        margin: 10px;
+      }
+      .des1 button{
+        height: 35px;
+        width: 100%;
+
+      }
+      .des1 img{
+        margin-bottom: 10px;
+      }
+      .des img{
+        width: 350px;
+        height: 200px;
+      }
+      .contact p{
+        font-size: 23px;
+        margin: 40px 0px 10px 20px;
+      }
+      .contact hr{
+        margin: 10px 20px 0px 20px;
+      }
+      .contact input{
+        height: 50px;
+        width: 1450px;
+        margin: 10px;
+        margin-left: 20px;
+      }
+      .contact button{
+        margin: 20px;
+        height: 40px;
+        width: 170px;
+        background-color: black;
+        color: white;
+      }
+      .contact img{
+        margin: 20px;
+        width: 97%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">
+        <div class="name"><b>B R</b> Architects</div>
+        <div class="items">
+          <ul>
+            <li>Projects</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box" id="box2">
+        <img id="building"
+          src="https://www.w3schools.com/w3images/architect.jpg"
+          alt="Image not found"
+        />
+        <p class="project">Projects</p>
+        <hr />
+        <div class="card">
+            <div class="row1">
+                <div class="card1" id="card1">
+                    <img id="pics" src="https://www.w3schools.com/w3images/house5.jpg" alt="house">
+                </div>
+                <div class="card1" id="card2">
+                    <img id="pics" src="https://www.w3schools.com/w3images/house2.jpg" alt="house">
+                </div>
+                <div class="card1" id="card3">
+                    <img id="pics" src="https://www.w3schools.com/w3images/house3.jpg" alt="house">
+                </div>
+                <div class="card1" id="card4">
+                    <img id="pics" src="https://www.w3schools.com/w3images/house4.jpg" alt="house">
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="card1" id="card5">
+                    <img id="pics" src="https://www.w3schools.com/w3images/house2.jpg" alt="house">
+                </div>
+                <div class="card1" id="card6">
+                    <img id="pics" src="https://www.w3schools.com/w3images/house5.jpg" alt="house">
+                </div>
+                <div class="card1" id="card7">
+                    <img id="pics" src="https://www.w3schools.com/w3images/house4.jpg" alt="house">
+                </div>
+                <div class="card1" id="card8">
+                    <img id="pics" src="https://www.w3schools.com/w3images/house3.jpg" alt="house">
+                </div>
+            </div>   
+        </div>
+        <div class="about">
+            <p>About</p>
+            <hr>
+            <p style="font-size: 18px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda aliquam sed, illo sit maxime aperiam laborum ducimus libero provident distinctio nihil voluptatibus ex cupiditate officiis laudantium molestias iure architecto impedit repellat nam quis quidem magnam similique voluptates? Officiis, est iusto  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam neque ipsam, reiciendis maiores id atque at dignissimos nihil sequi quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="des">
+            <div class="des1">
+                <img src="https://www.w3schools.com/w3images/team2.jpg" alt="ceo">
+                <h2>John Doe</h2>
+                <p>CEO & Founder</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+            <div class="des1">
+                <img src="https://www.w3schools.com/w3images/team1.jpg" alt="architect">
+                <h2>Jane Doe</h2>
+                <p>Architect</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+            <div class="des1">
+                <img src="https://www.w3schools.com/w3images/team3.jpg" alt="architect">
+                <h2>Mike Ross</h2>
+                <p>Architect</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+            <div class="des1">
+                <img src="https://www.w3schools.com/w3images/team4.jpg" alt="architect">
+                <h2>Dan Star</h2>
+                <p>Architect</p>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+        </div>
+        <div class="contact">
+            <p>Contact</p>
+            <hr>
+            <p>Lets Get in touch and talk about your project.</p>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Subject">
+            <input type="text" placeholder="Comment">
+            <button>SEND MESSAGE</button>
+            <img src="https://www.w3schools.com/w3images/map.jpg" alt="map">
+        </div>
+      </div>
+
+      <div class="box" id="box3"><p>Powered by w3.css</p></div>
+    </div>
+  </body>
+</html>
